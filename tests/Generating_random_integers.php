@@ -67,12 +67,12 @@ class Generating_random_integers extends TestCase
 
         $below_10 = 0;
         $below_20 = 0;
-        for ($i = 0; $i < 100; $i++) {
+        for ($i = 0; $i < 1000; $i++) {
             $below_10 += $random->below(10);
             $below_20 += $random->below(20);
         }
-        $below_10 /= 100;
-        $below_20 /= 100;
+        $below_10 /= 1000;
+        $below_20 /= 1000;
 
         self::assertEqualsWithDelta(
             $below_20,
