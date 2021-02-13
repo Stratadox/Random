@@ -1,0 +1,31 @@
+{
+    "name": "stratadox/random",
+    "description": "Simple random generator abstraction",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Stratadox",
+            "homepage": "http://www.stratadox.com/"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Stratadox\\Random\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Stratadox\\Random\\Test\\": "tests"
+        }
+    },
+    "require": {
+        "php": "^7.2"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master",
+        "phpunit/phpunit": "^8.5"
+    },
+    "scripts": {
+        "test": "phpunit -c phpunit.xml --testdox"
+    }
+}
